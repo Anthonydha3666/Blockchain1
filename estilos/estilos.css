@@ -1,0 +1,757 @@
+/* importaciones de font */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@500&display=swap');
+
+
+/* variables con colores y diseños */
+:root {
+    --main-bg-color: #000;
+    --main-b1-color: #000;
+    --main-bcar_color:#292828e5;
+}
+
+/* INDICE DE DISEÑO */
+/* 1-Normalizacion de los objectos y implementacion de la imagen de fondo */
+/* 2-Estilos barra  */
+/* 3-diseño del texto con efecto */
+/* 4-que es y para que sirve la blockchain */
+/* 5-diseño de hero principal */
+/* 6-diseño de la seccion de productos */
+/* 7-diseño del formulario */
+/* 8- Diseño de servicios */
+/* 9-footer */
+/* 10-diseño del loader */
+/*11- maquina de escribir efecto */
+
+
+
+
+
+/* 1-Normalizacion de los objectos y implementacion de la imagen de fondo */
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    background-image: url(../img/stars.png);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+
+    font-family: 'Roboto', sans-serif !important;
+
+
+}
+
+html {
+    width: 100%;
+}
+
+.btn{
+    z-index: 51;
+}
+/*1-terminado */
+.btnsrcoll{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 45px;
+    background-color: #fff;
+    display: none;
+    
+    
+}
+.btnsrcoll a:hover{
+    text-decoration: none;
+}
+/* 2-Estilos barra  */
+.navbar {
+    background-color: #00000000 !important;
+    height: 90PX;
+    font-size: 20px;
+    
+
+}
+.navbar a:hover{
+    text-decoration: none;
+}
+
+@keyframes borde-animacion {
+    0% {
+        border-color: #000983;
+    }
+
+    25% {
+        border-color: rgb(7, 134, 185);
+    }
+
+    50% {
+        border-color: rgb(0, 204, 255);
+    }
+
+    75% {
+        border-color: rgb(7, 134, 185);
+    }
+
+    100% {
+        border-color: #000983;
+    }
+}
+
+.navbar-brand img {
+    width: 6vw;
+    min-width: 60px;
+    border-radius: 50%;
+    border: 5px solid #000;
+    animation: borde-animacion 2s infinite alternate;
+}
+
+
+.navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    background-color: var(--main-bg-color);
+    text-align: center;
+ 
+
+}
+
+.navbar-nav .dropdown-menu {
+    background-color: var(--main-bg-color);
+
+
+
+}
+
+@media screen and (min-width: 100px) and (max-width: 1000px) {
+    /* Estilos para elementos en pantallas medinas */
+
+
+}
+
+/* 2- terminado */
+/* 3-diseño del texto con efecto */
+.title-animation {
+
+    color: hsla(0, 0%, 0%, .9);
+    font-size: 3vw;
+    left: 0;
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+    animation: move linear 1500ms infinite;
+    text-shadow: 5px 5px 5px 5px rgba(255, 252, 252, 0.842);
+    ;
+}
+
+
+@keyframes move {
+    0% {
+        text-shadow:
+            2px -2px 0 rgba(225, 0, 255, 0.61),
+            2px -2px 0 rgba(225, 0, 255, 0.61),
+            1px -1px 0 rgba(225, 0, 255, 0.61),
+            1px -1px 0 rgba(225, 0, 255, 0.61),
+            -2px 2px 0 hsla(180, 100%, 50%, 1),
+            -2px 2px 0 hsla(180, 100%, 50%, 1),
+            -1px 1px 0 hsla(180, 100%, 50%, 1),
+            -1px 1px 0 hsla(180, 100%, 50%, 1);
+    }
+
+    25% {
+        text-shadow:
+            2px -2px 0 rgba(225, 0, 255, 0.61),
+            2px -2px 0 rgba(225, 0, 255, 0.61),
+            1px -1px 0 rgba(225, 0, 255, 0.61),
+            1px -1px 0 rgba(225, 0, 255, 0.61),
+            -2px 2px 0 hsla(180, 100%, 50%, 1),
+            -2px 2px 0 hsla(180, 100%, 50%, 1),
+            -1px 1px 0 hsla(180, 100%, 50%, 1),
+            -1px 1px 0 hsla(180, 100%, 50%, 1);
+    }
+
+    50% {
+        text-shadow:
+            -4px 4px 0 rgba(225, 0, 255, 0.61),
+            -3px 3px 0 rgba(225, 0, 255, 0.61),
+            -2px 2px 0 rgba(225, 0, 255, 0.61),
+            -1px 1px 0rgba(225, 0, 255, 0.61),
+            4px -4px 0 hsla(180, 100%, 50%, 1),
+            3px -3px 0 hsla(180, 100%, 50%, 1),
+            2px -2px 0 hsla(180, 100%, 50%, 1),
+            1px -1px 0 hsla(180, 100%, 50%, 1);
+    }
+
+    75% {
+        text-shadow:
+            4px 4px 0 hsla(180, 100%, 50%, 1),
+            3px 3px 0 hsla(180, 100%, 50%, 1),
+            2px 2px 0 hsla(180, 100%, 50%, 1),
+            1px 1px 0 hsla(180, 100%, 50%, 1),
+            -4px -4px 0 rgba(225, 0, 255, 0.61),
+            -3px -3px 0 rgba(225, 0, 255, 0.61),
+            -2px -2px 0 rgba(225, 0, 255, 0.61),
+            -1px -1px 0 rgba(225, 0, 255, 0.61);
+    }
+
+    100% {
+        text-shadow:
+            4px -4px 0 rgba(225, 0, 255, 0.61),
+            3px -3px 0 rgba(225, 0, 255, 0.61),
+            2px -2px 0 rgba(225, 0, 255, 0.61),
+            1px -1px 0 rgba(225, 0, 255, 0.61),
+            -4px 4px 0 hsla(180, 100%, 50%, 1),
+            -3px 3px 0 hsla(180, 100%, 50%, 1),
+            -2px 2px 0 hsla(180, 100%, 50%, 1),
+            -1px 1px 0 hsla(180, 100%, 50%, 1);
+    }
+}
+
+/* 3- terminado */
+/* 4-que es y para que sirve la blockchain */
+.infoblochain {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.151)707;
+    color: #000000;
+    padding: 20px 25px;
+    text-align: center;
+
+
+    position: relative;
+    font-size: 20px;
+    background-color: #fff;
+    
+}
+
+
+
+/* /4-terminado */
+/* 5-diseño de hero principal */
+.hero {
+    display: flex;
+    flex-wrap: nowrap;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 110vh;
+  
+    align-items: center;
+    height: 100%;
+
+}
+
+.hero img {
+    width: 100%;
+    min-width: 100px;
+    max-width: 600px;
+
+ 
+
+
+
+}
+
+.hero .text-info {
+
+    width: 100%;
+    text-align: center;
+    padding: 20px 25px;
+  
+    color: #ffff !important;
+    font-size: 1.5vw;
+
+}
+
+@media screen and (min-width: 100px) and (max-width: 680px) {
+
+    /* Estilos para elementos en pantallas medinas */
+    .hero {
+        flex-wrap: wrap;
+
+    }
+
+    .hero img {
+        max-width: none;
+    }
+}
+
+/* /5-terminado */
+
+/* 6-diseño de la seccion de card */
+.card-info {
+    display: flex;
+    flex-wrap: wrap;
+  
+    width: 100%;
+   
+    background-color: #ffffff;
+    font-weight: bold;
+   
+}
+.card-info .col-lg-4{
+
+}
+
+.card {
+    width: 100%;
+  
+    min-width: 100px;
+    background-color: #292828e5;
+    color: #ffffff ;
+    text-align: center;
+    margin: auto;
+     border-radius: 0;  
+    padding: 30px;
+    border-bottom: #320083 solid 3px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.card a{
+    color: #ffffff;
+}
+.card p{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.card h2{
+    
+}
+.card-info .imagen{
+   
+  width: 100%;
+  border-start-end-radius: 30px;
+  border-start-start-radius: 30px;
+
+}
+.card .icon{
+    background-color: #1c1c1c;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: -60px;
+    justify-content: center;
+    align-items: center;
+}
+.card .icon img{
+    object-fit: cover;
+    margin-top: 7px;
+}
+.services-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+.bg-card{
+    margin: 30px;
+    
+}
+.card .bg-card{
+border-radius: 30px ;
+}
+
+/* 6-terminado */
+
+/* 7-diseño del formulario */
+.formulario {
+    width: 100%;
+}
+
+.form-diseño {
+    width: 100%;
+    max-width: 1400px;
+    background-color: var(--main-bg-color);
+    padding: 50px;
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    padding-top: 150px;
+    background-image: url(../img/man_3d.gif);
+    background-position: -10rem;
+    background-repeat: no-repeat;
+
+
+}
+
+.form-group {
+    margin: 20px;
+    margin-left: 5px;
+    display: flex;
+}
+.form-group  input{
+    margin: 10px !important;
+}
+textarea{
+    width: 100%;
+    border-radius: 10px;
+    
+}
+
+.form-diseño .btn {
+    width: 100%;
+    max-width: 150px;
+    min-width: 200px;
+    background-color: rgb(79, 17, 136);
+    font-size: 1.5rem;
+    outline: none;
+    border: none;
+    margin-top: 30px;
+
+}
+
+.form-diseño .btn:hover {
+    background-color: hsla(180, 100%, 50%, 1);
+    color: #000;
+}
+
+.titulo-form {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #000000;
+    padding: 30px;
+    max-width: 450px;
+
+
+
+
+}
+
+.form-diseño input {
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+    padding: 7px 15px;
+    outline: none;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.form-diseño  .row input{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width: 100px) and (max-width: 380px) {
+
+    /* Estilos para elementos en pantallas medinas */
+    .titulo-form {
+        font-size: medium;
+    }
+}
+
+/* 7-terminado */
+
+/* 8- Diseño de servicios */
+
+.servicios {
+    width: 100%;
+
+
+    color: #ffff;
+
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.servicios .section-title {
+    text-align: center;
+    color: #ffff;
+
+    width: 100%;
+    padding-top: 100px;
+    
+    border-radius: 10px;
+}
+
+.servicios .card-services {
+    width: 100%;
+
+    color: #ffff;
+    min-width: 300px;
+    height: 300px;
+
+}
+
+
+
+.card-services a {
+    text-decoration: none;
+    color: #ffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    display: block;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+
+
+}
+
+.servicios .icon {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    
+}
+
+.servicios .col-lg-4 {
+    padding: 0;
+    text-align: center;
+    margin: 15px;
+    border: #ffffff48 solid 3px;
+    background-color: #070707;
+    min-width: 300px;
+    max-width: 300px;
+    border-radius: 10px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+    animation: borde-animacion 2s infinite alternate;
+    background-image: url(../img/stars.png);
+}
+
+.servicios .col-lg-4:hover {
+
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+   
+
+
+}
+.servicios .col-lg-4 a:hover{
+text-decoration: none;
+}
+
+.servicios .row {
+
+
+    width: 100%;
+    height: 120%;
+    display: flex;
+    border-radius: 10px;
+    padding-bottom: 50px;
+
+}
+
+.servicios .container {
+    margin: auto;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 100px) and (max-width: 350px) {
+
+    /* Estilos para elementos en pantallas medinas */
+    .servicios .section-title {
+        margin: 0;
+        font-size: 1000px !important;
+    }
+}
+
+/* 8-terminado */
+
+/* 9-footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding: 20px 0;
+    color: #000000;
+    
+}
+
+.footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+   
+ 
+    color: #000000;
+}
+.container{
+
+}
+.row {
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    color: #000000;
+}
+
+
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+@media screen and (min-width: 100px) and (max-width: 350px) {
+
+    /* Estilos para elementos en pantallas medinas */
+    .servicios .section-title {
+        margin: 0;
+        font-size: 1000px !important;
+    }
+}
+
+/* 9-terminado */
+
+
+
+/* 10-diseño del loader */
+
+.centrado{
+    height: 100vh;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.hidden{
+    overflow: hidden;
+}
+.lds-facebook {
+
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-facebook div {
+    display: inline-block;
+    position: absolute;
+    left: 8px;
+    width: 16px;
+    background: #fff;
+    animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  }
+  .lds-facebook div:nth-child(1) {
+    left: 8px;
+    animation-delay: -0.24s;
+  }
+  .lds-facebook div:nth-child(2) {
+    left: 32px;
+    animation-delay: -0.12s;
+  }
+  .lds-facebook div:nth-child(3) {
+    left: 56px;
+    animation-delay: 0;
+  }
+  @keyframes lds-facebook {
+    0% {
+      top: 8px;
+      height: 64px;
+    }
+    50%, 100% {
+      top: 24px;
+      height: 32px;
+    }
+  }
+
+
+/* 10-terminado */
+/*11- maquina de escribir efecto */
+h1 {
+    
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 2rem;
+    margin: 0 auto;
+   
+    border-right: 0.15em solid #18bdec;
+    animation: typing 4s steps(38) 1s  normal both, blink 1s ;
+}
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+/* 11-terminado */
+/* 12- boton del inicio */
+.text-info a{
+    text-decoration: none;
+    color:#fff;
+}
+.btn-contacto{
+    width: 100%;    
+    max-width: 250px;
+    min-width: 200px;
+    background-color: rgb(79, 17, 136);
+    font-size: 1.4rem;
+    outline: none;
+    border: none;
+    margin-top: 30px;
+    font-weight: bold;
+    
+}
+
+.btn-contacto:hover{
+    background-color: #18bdec;
+    color:black ;
+}
+.btn-contacto  a:hover{
+   
+    color:black;
+}
+/* 12-terminado */
+
+
+.navbar li img{
+    max-width: 50px;
+    object-fit: cover;
+}
+#language-switch{
+    cursor: pointer;
+}
